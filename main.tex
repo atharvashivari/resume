@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+% Author : Atharva Manish Shivari
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Atharva Shivari} \\ \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9923922558 ~ 
+    \href{mailto:shivariatharva@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shivariatharva@gmail.com}} ~ 
+    \href{https://linkedin.com/in/atharva-shivari/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/atharva-shivari}}  ~
+    \href{https://github.com/atharvashivari}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/atharva-shivari}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zeal College of Engineering and Research}{Pune, India}
+      {Bachelor of Engineering in Computer Engineering; CGPA: 7.12}{2022 -- 2026}
+    \resumeSubheading
+      {St. Augusthi Junior College}{Palghar, India}
+      {HSC (Science); Percentage: 70.50\%}{2020 -- 2022}
+    \resumeSubheading
+      {Holy Mary Convent High School}{Thane, India}
+      {SSC; Percentage: 91.00\%}{2020}
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK-----------
+\section{Relevant Coursework}
+    \vspace{-2pt}
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-2pt, parsep=3pt]
+            \item\small Data Structures \& Algorithms
+            \item\small Database Management Systems (DBMS)
+            \item\small Operating Systems
+            \item\small Computer Networks
+            \item\small Object-Oriented Programming (OOP)
+            \item\small Internet of Things (IoT)
+            \item\small Web Technology
+            \item\small Software Engineering
+        \end{itemize}
+    \end{multicols}
+    \vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {EY Global Delivery Services \& AICTE}{Feb 2025 -- Mar 2025}
+      {Full Stack Web Development Intern}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Completed an intensive internship focused on building modern web applications using the \textbf{MERN Stack} (MongoDB, Express.js, React.js, Node.js).}
+        \resumeItem{Designed and deployed dynamic full-stack applications featuring secure user authentication and responsive UIs.}
+        \resumeItem{Collaborated on project architecture, ensuring modular code structure and scalability for future enhancements.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Automated Fluid Management (IoT)} $|$ \emph{Final Year Project, C++ (Firmware), Python}}{Jan 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{\textbf{Publication:} Co-authored and published a research paper titled \textbf{"Review Paper On Automated Fluid Monitoring In Healthcare Using IoT"} detailing the system architecture.}
+            \resumeItem{Architected a \textbf{Master-Slave topology} using \textbf{ESP-NOW}, enabling multiple bedside nodes to communicate with a central gateway without Wi-Fi dependence.}
+            \resumeItem{Implemented secure data transmission to the cloud using \textbf{AWS IoT Core} certificates and MQTT protocols.}
+            \resumeItem{Programmed \textbf{ESP32 firmware} to process \textbf{HX711 Load Cell} data and trigger \textbf{Servo Motor} auto-cutoff mechanisms.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{ImpactLink - Crowdfunding Platform} $|$ \emph{React.js, Node.js, MongoDB, Razorpay}}{Aug 2024 -- Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack crowdfunding platform integrating \textbf{Razorpay Gateway} for secure donations and real-time tracking.}
+            \resumeItem{Engineered a robust authentication system with JWT, featuring secure email-based password reset using \textbf{Nodemailer}.}
+            \resumeItem{Designed an interactive Admin Dashboard using \textbf{Recharts} and enhanced UI engagement with \textbf{GSAP} animations.}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, JavaScript (ES6+), Python, Java, SQL, HTML5/CSS3} \\
+     \textbf{Frameworks}{: React.js, Node.js, Express.js, MongoDB, Django REST Framework, Tailwind CSS, GSAP} \\
+     \textbf{Tools}{: Git/GitHub, VS Code, Postman, IoT Hardware (ESP32, Sensors), AWS IoT Core} \\
+     \textbf{Core Concepts}{: Data Structures \& Algorithms, OOPs, DBMS, System Design, Distributed Systems}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------LEADERSHIP & ACHIEVEMENTS---------------
+\section{Leadership \& Achievements}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Event Management Co-Lead} $|$ \emph{Google Developer Group (GDG) ZCOER}}{2024 -- 2025}
+          \resumeItemListStart
+            \resumeItem{Orchestrated technical events and workshops, fostering a coding culture among 100+ students.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Social Volunteer} $|$ \emph{Bhumi Foundation}}{2023 -- 2025}
+          \resumeItemListStart
+             \resumeItem{Led fundraising and social service initiatives focused on child development and education.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Fashion Show Club} $|$ \emph{ZCOER}}{2022 -- 2023}
+          \resumeItemListStart
+             \resumeItem{Collaborated with team members to organize and present fashion shows, enhancing creativity and teamwork skills.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+\end{document}
