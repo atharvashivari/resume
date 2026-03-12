@@ -22,19 +22,6 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -70,24 +57,11 @@
   }
 }
 
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -97,8 +71,6 @@
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -139,22 +111,6 @@
       {SSC; Percentage: 91.00\%}{2020}
   \resumeSubHeadingListEnd
 
-%-----------RELEVANT COURSEWORK-----------
-\section{Relevant Coursework}
-    \vspace{-2pt}
-    \begin{multicols}{2}
-        \begin{itemize}[itemsep=-2pt, parsep=3pt]
-            \item\small Data Structures \& Algorithms
-            \item\small Database Management Systems (DBMS)
-            \item\small Operating Systems
-            \item\small Computer Networks
-            \item\small Object-Oriented Programming (OOP)
-            \item\small Internet of Things (IoT)
-            \item\small Web Technology
-            \item\small Software Engineering
-        \end{itemize}
-    \end{multicols}
-    \vspace{-10pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -177,9 +133,9 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Automated Fluid Management (IoT)} $|$ \emph{Final Year Project, C++ (Firmware), Python}}{Jan 2024 -- Present}
+          {\textbf{Automated Fluid Management (IoT)} $|$ \emph{C++ (Firmware), Python, AWS IoT Core}}{Jan 2024 -- Present}
           \resumeItemListStart
-            \resumeItem{\textbf{Publication:} Co-authored and published a research paper titled \textbf{"Review Paper On Automated Fluid Monitoring In Healthcare Using IoT"} detailing the system architecture.}
+            \resumeItem{\textbf{Publication:} Published a research paper titled \textbf{"Review Paper On Automated Fluid Monitoring In Healthcare Using IoT"} detailing the system architecture.}
             \resumeItem{Architected a \textbf{Master-Slave topology} using \textbf{ESP-NOW}, enabling multiple bedside nodes to communicate with a central gateway without Wi-Fi dependence.}
             \resumeItem{Implemented secure data transmission to the cloud using \textbf{AWS IoT Core} certificates and MQTT protocols.}
             \resumeItem{Programmed \textbf{ESP32 firmware} to process \textbf{HX711 Load Cell} data and trigger \textbf{Servo Motor} auto-cutoff mechanisms.}
@@ -187,12 +143,14 @@
           \vspace{-13pt}
           
       \resumeProjectHeading
-          {\textbf{ImpactLink - Crowdfunding Platform} $|$ \emph{React.js, Node.js, MongoDB, Razorpay}}{Aug 2024 -- Dec 2024}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack crowdfunding platform integrating \textbf{Razorpay Gateway} for secure donations and real-time tracking.}
-            \resumeItem{Engineered a robust authentication system with JWT, featuring secure email-based password reset using \textbf{Nodemailer}.}
-            \resumeItem{Designed an interactive Admin Dashboard using \textbf{Recharts} and enhanced UI engagement with \textbf{GSAP} animations.}
-          \resumeItemListEnd 
+    {\textbf{ImpactLink - Crowdfunding Platform} $|$ \emph{React.js, Node.js, MongoDB, Redis, Razorpay, \href{https://impact-link-six.vercel.app}{Demo}}}{Aug 2024 -- Present}
+    \resumeItemListStart
+        \resumeItem{Engineered a high-concurrency crowdfunding platform utilizing a \textbf{Cache-Aside pattern with Redis}, reducing database read latency and ensuring high performance during traffic spikes.}
+        \resumeItem{Architected a secure payment engine using \textbf{Mongoose ACID Transactions} and Razorpay webhooks to guarantee 100\% data consistency between donation records and campaign funding goals.}
+        \resumeItem{Hardened application security by implementing multi-layered defense mechanisms, including \textbf{Helmet.js} for CSP, \textbf{Mongo-Sanitize} for injection prevention, and tiered rate-limiting.}
+        \resumeItem{Implemented comprehensive production observability by integrating \textbf{Sentry} for real-time error tracking and \textbf{Winston} for structured logging, significantly reducing Mean Time to Recovery (MTTR).}
+        \resumeItem{Streamlined user engagement using \textbf{BullMQ and Redis} for asynchronous background processing of transactional emails, ensuring a non-blocking main event loop.}
+    \resumeItemListEnd
           
     \resumeSubHeadingListEnd
 \vspace{-15pt}
